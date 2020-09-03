@@ -17,6 +17,12 @@
             "role":     "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/toby1991/LogViewer"
+        }
+    ],
     "type":    "library",
     "license": "MIT",
     "require": {

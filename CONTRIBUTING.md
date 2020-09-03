@@ -10,7 +10,7 @@ Contributions are welcome, and are accepted via pull requests. Please review the
   * Send a coherent commit history, making sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please squash them before submitting.
   * You may also need to rebase to avoid merge conflicts.
   * **Translations :**
-    * After you made your translations, ensure that you added your locale key in alphabetical order at [line](https://github.com/ARCANEDEV/LogViewer/blob/master/tests/TestCase.php#L29) in the `tests/TestCase.php` file for the tests.
+    * After you made your translations, ensure that you added your locale key in alphabetical order at [line](https://github.com/toby1991/LogViewer/blob/master/tests/TestCase.php#L29) in the `tests/TestCase.php` file for the tests.
     * The locale key must be a [ISO 639-1 code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes), check also [caouecs/Laravel-lang package](https://github.com/caouecs/Laravel-lang/).
 
 ## Running Tests
