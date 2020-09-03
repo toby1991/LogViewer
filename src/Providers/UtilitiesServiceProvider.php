@@ -2,7 +2,7 @@
 
 use TobyYan\LogViewer\Contracts;
 use TobyYan\LogViewer\Utilities;
-use TobyYan\Support\ServiceProvider;
+use Arcanedev\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 
 /**

@@ -1,7 +1,7 @@
 <?php namespace TobyYan\LogViewer\Commands;
 
 use TobyYan\LogViewer\Contracts\LogViewer as LogViewerContract;
-use TobyYan\Support\Bases\Command as BaseCommand;
+use Arcanedev\Support\Bases\Command as BaseCommand;
 
 /**
  * Class     Command

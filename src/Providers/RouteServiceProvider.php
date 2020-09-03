@@ -1,7 +1,7 @@
 <?php namespace TobyYan\LogViewer\Providers;
 
 use TobyYan\LogViewer\Http\Routes\LogViewerRoute;
-use TobyYan\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Arcanedev\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 /**
  * Class     RouteServiceProvider

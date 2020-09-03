@@ -1,7 +1,7 @@
 <?php namespace TobyYan\LogViewer\Entities;
 
 use TobyYan\LogViewer\Helpers\LogParser;
-use TobyYan\Support\Collection;
+use Arcanedev\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

@@ -48,7 +48,7 @@ class UtilitiesServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \TobyYan\Support\ServiceProvider::class,
+            \Arcanedev\Support\ServiceProvider::class,
             UtilitiesServiceProvider::class,
         ];
 

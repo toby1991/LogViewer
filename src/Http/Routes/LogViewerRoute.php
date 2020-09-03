@@ -1,6 +1,6 @@
 <?php namespace TobyYan\LogViewer\Http\Routes;
 
-use TobyYan\Support\Routing\RouteRegistrar;
+use Arcanedev\Support\Routing\RouteRegistrar;
 
 /**
  * Class     LogViewerRoute

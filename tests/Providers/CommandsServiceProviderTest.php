@@ -46,7 +46,7 @@ class CommandsServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \TobyYan\Support\ServiceProvider::class,
+            \Arcanedev\Support\ServiceProvider::class,
             CommandsServiceProvider::class
         ];
 

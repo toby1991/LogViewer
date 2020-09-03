@@ -2,7 +2,7 @@
 
 use TobyYan\LogViewer\Contracts\Utilities\Filesystem as FilesystemContract;
 use TobyYan\LogViewer\Exceptions\LogNotFoundException;
-use TobyYan\Support\Collection;
+use Arcanedev\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**

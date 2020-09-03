@@ -44,8 +44,8 @@ class LogViewerServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \TobyYan\Support\ServiceProvider::class,
-            \TobyYan\Support\PackageServiceProvider::class,
+            \Arcanedev\Support\ServiceProvider::class,
+            \Arcanedev\Support\PackageServiceProvider::class,
             \TobyYan\LogViewer\LogViewerServiceProvider::class,
         ];
 

@@ -1,7 +1,7 @@
 <?php namespace TobyYan\LogViewer\Providers;
 
 use TobyYan\LogViewer\Commands;
-use TobyYan\Support\Providers\CommandServiceProvider as ServiceProvider;
+use Arcanedev\Support\Providers\CommandServiceProvider as ServiceProvider;
 
 /**
  * Class     CommandsServiceProvider
