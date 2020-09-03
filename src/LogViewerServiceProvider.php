@@ -1,6 +1,6 @@
 <?php namespace TobyYan\LogViewer;
 
-use TobyYan\Support\PackageServiceProvider;
+use Arcanedev\Support\PackageServiceProvider;
 
 /**
  * Class     LogViewerServiceProvider
