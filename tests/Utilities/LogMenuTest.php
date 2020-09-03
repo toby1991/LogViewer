@@ -1,12 +1,12 @@
-<?php namespace Arcanedev\LogViewer\Tests\Utilities;
+<?php namespace TobyYan\LogViewer\Tests\Utilities;
 
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Utilities\LogMenu;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Utilities\LogMenu;
 
 /**
  * Class     LogMenuTest
  *
- * @package  Arcanedev\LogViewer\Tests\Utilities
+ * @package  TobyYan\LogViewer\Tests\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogMenuTest extends TestCase
@@ -26,7 +26,7 @@ class LogMenuTest extends TestCase
     {
         parent::setUp();
 
-        $this->menu = $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\LogMenu::class);
+        $this->menu = $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\LogMenu::class);
     }
 
     public function tearDown()

@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Tests\Entities;
+<?php namespace TobyYan\LogViewer\Tests\Entities;
 
-use Arcanedev\LogViewer\Entities\LogEntry;
-use Arcanedev\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Entities\LogEntry;
+use TobyYan\LogViewer\Tests\TestCase;
 
 /**
  * Class     LogEntryTest
  *
- * @package  Arcanedev\LogViewer\Tests\Entities
+ * @package  TobyYan\LogViewer\Tests\Entities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogEntryTest extends TestCase
 {

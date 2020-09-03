@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Contracts\Utilities;
+<?php namespace TobyYan\LogViewer\Contracts\Utilities;
 
-use Arcanedev\LogViewer\Entities\Log;
+use TobyYan\LogViewer\Entities\Log;
 use Illuminate\Contracts\Config\Repository as ConfigContract;
 
 /**
  * Interface  LogMenu
  *
- * @package   Arcanedev\LogViewer\Contracts\Utilities
+ * @package   TobyYan\LogViewer\Contracts\Utilities
  * @author    ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 interface LogMenu
 {
@@ -28,7 +29,7 @@ interface LogMenu
     /**
      * Set the log styler instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\LogStyler  $styler
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\LogStyler  $styler
      *
      * @return self
      */
@@ -42,7 +43,7 @@ interface LogMenu
     /**
      * Make log menu.
      *
-     * @param  \Arcanedev\LogViewer\Entities\Log  $log
+     * @param  \TobyYan\LogViewer\Entities\Log  $log
      * @param  bool                               $trans
      *
      * @return array

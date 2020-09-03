@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer;
+<?php namespace TobyYan\LogViewer;
 
-use Arcanedev\Support\PackageServiceProvider;
+use TobyYan\Support\PackageServiceProvider;
 
 /**
  * Class     LogViewerServiceProvider
  *
- * @package  Arcanedev\LogViewer
+ * @package  TobyYan\LogViewer
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogViewerServiceProvider extends PackageServiceProvider
 {

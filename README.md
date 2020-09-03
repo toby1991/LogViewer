@@ -11,6 +11,7 @@
 [![Packagist Downloads][badge_downloads]][link-packagist]
 
 *By [ARCANEDEV&copy;](http://www.arcanedev.net/)*
+*By [TobyYan&copy;](http://toby1991.com/)*
 
 This package allows you to manage and keep track of each one of your logs files.
 
@@ -18,7 +19,7 @@ This package allows you to manage and keep track of each one of your logs files.
 
 Official documentation for LogViewer can be found at the [_docs folder](_docs/0.Home.md).
 
-Feel free to check out the [releases](https://github.com/ARCANEDEV/LogViewer/releases), [license](LICENSE.md), and [contribution guidelines](CONTRIBUTING.md).
+Feel free to check out the [releases](https://github.com/toby1991/LogViewer/releases), [license](LICENSE.md), and [contribution guidelines](CONTRIBUTING.md).
 
 ## Features
 
@@ -79,35 +80,33 @@ Any ideas are welcome. Feel free to submit any issues or pull requests, please c
 
 ## Security
 
-If you discover any security related issues, please email arcanedev.maroc@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email me@tobyan.com instead of using the issue tracker.
 
 ## Credits
 
-- [ARCANEDEV][link-author]
+- [TobyYan][link-author]
 - [All Contributors][link-contributors]
 
 ## PREVIEW
 
-![Dashboard](https://raw.githubusercontent.com/ARCANEDEV/LogViewer/master/_screenshots/1-dashboard.jpg)
-![Logs list](https://raw.githubusercontent.com/ARCANEDEV/LogViewer/master/_screenshots/2-logs-list.jpg)
-![Single log](https://raw.githubusercontent.com/ARCANEDEV/LogViewer/master/_screenshots/3-single-log.jpg)
+![Dashboard](https://raw.githubusercontent.com/toby1991/LogViewer/master/_screenshots/1-dashboard.jpg)
+![Logs list](https://raw.githubusercontent.com/toby1991/LogViewer/master/_screenshots/2-logs-list.jpg)
+![Single log](https://raw.githubusercontent.com/toby1991/LogViewer/master/_screenshots/3-single-log.jpg)
 
 [badge_laravel]:      https://img.shields.io/badge/Laravel-5.x-orange.svg?style=flat-square
-[badge_license]:      https://img.shields.io/packagist/l/arcanedev/log-viewer.svg?style=flat-square
-[badge_build]:        https://img.shields.io/travis/ARCANEDEV/LogViewer.svg?style=flat-square
-[badge_coverage]:     https://img.shields.io/scrutinizer/coverage/g/ARCANEDEV/LogViewer.svg?style=flat-square
-[badge_quality]:      https://img.shields.io/scrutinizer/g/ARCANEDEV/LogViewer.svg?style=flat-square
+[badge_license]:      https://img.shields.io/packagist/l/toby1991/log-viewer.svg?style=flat-square
+[badge_build]:        https://img.shields.io/travis/toby1991/LogViewer.svg?style=flat-square
+[badge_coverage]:     https://img.shields.io/scrutinizer/coverage/g/toby1991/LogViewer.svg?style=flat-square
+[badge_quality]:      https://img.shields.io/scrutinizer/g/toby1991/LogViewer.svg?style=flat-square
 [badge_insight]:      https://img.shields.io/sensiolabs/i/d6b4587a-e00d-4dac-98db-f979731fdc4d.svg?style=flat-square
-[badge_issues]:       https://img.shields.io/github/issues/ARCANEDEV/LogViewer.svg?style=flat-square
-[badge_package]:      https://img.shields.io/badge/package-arcanedev/log--viewer-blue.svg?style=flat-square
-[badge_release]:      https://img.shields.io/packagist/v/arcanedev/log-viewer.svg?style=flat-square
-[badge_downloads]:    https://img.shields.io/packagist/dt/arcanedev/log-viewer.svg?style=flat-square
+[badge_issues]:       https://img.shields.io/github/issues/toby1991/LogViewer.svg?style=flat-square
+[badge_package]:      https://img.shields.io/badge/package-toby1991/log--viewer-blue.svg?style=flat-square
+[badge_release]:      https://img.shields.io/packagist/v/toby1991/log-viewer.svg?style=flat-square
+[badge_downloads]:    https://img.shields.io/packagist/dt/toby1991/log-viewer.svg?style=flat-square
 
-[link-author]:        https://github.com/arcanedev-maroc
-[link-github-repo]:   https://github.com/ARCANEDEV/LogViewer
-[link-github-issues]: https://github.com/ARCANEDEV/LogViewer/issues
-[link-contributors]:  https://github.com/ARCANEDEV/LogViewer/graphs/contributors
-[link-packagist]:     https://packagist.org/packages/arcanedev/log-viewer
-[link-travis]:        https://travis-ci.org/ARCANEDEV/LogViewer
-[link-scrutinizer]:   https://scrutinizer-ci.com/g/ARCANEDEV/LogViewer/?branch=master
-[link-insight]:       https://insight.sensiolabs.com/projects/d6b4587a-e00d-4dac-98db-f979731fdc4d
+[link-author]:        https://github.com/toby1991
+[link-github-repo]:   https://github.com/toby1991/LogViewer
+[link-github-issues]: https://github.com/toby1991/LogViewer/issues
+[link-contributors]:  https://github.com/toby1991/LogViewer/graphs/contributors
+[link-packagist]:     https://packagist.org/packages/toby1991/log-viewer
+[link-travis]:        https://travis-ci.org/toby1991/LogViewer

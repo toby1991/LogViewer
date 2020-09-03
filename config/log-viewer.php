@@ -1,6 +1,6 @@
 <?php
 
-use Arcanedev\LogViewer\Contracts\Utilities\Filesystem;
+use TobyYan\LogViewer\Contracts\Utilities\Filesystem;
 
 return [
 
@@ -14,11 +14,25 @@ return [
     /* -----------------------------------------------------------------
      |  Log files pattern
      | -----------------------------------------------------------------
+     |  app.log = single
+     |
+     | 'pattern'       => [
+     |    'prefix'    => Filesystem::PATTERN_PREFIX_SINGLE,    // 'laravel-'
+     |    'date'      => '',      // '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+     |    'extension' => Filesystem::PATTERN_EXTENSION, // '.log'
+     | ],
+     |  app.log = daily
+     |
+     | 'pattern'       => [
+     |    'prefix'    => Filesystem::PATTERN_PREFIX,    // 'laravel-'
+     |    'date'      => Filesystem::PATTERN_DATE,      // '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+     |    'extension' => Filesystem::PATTERN_EXTENSION, // '.log'
+     | ],
      */
 
     'pattern'       => [
-        'prefix'    => Filesystem::PATTERN_PREFIX,    // 'laravel-'
-        'date'      => Filesystem::PATTERN_DATE,      // '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+        'prefix'    => Filesystem::PATTERN_PREFIX_SINGLE,    // 'laravel-'
+        'date'      => '',      // '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
         'extension' => Filesystem::PATTERN_EXTENSION, // '.log'
     ],
 

@@ -1,15 +1,16 @@
-<?php namespace Arcanedev\LogViewer;
+<?php namespace TobyYan\LogViewer;
 
-use Arcanedev\LogViewer\Contracts\Utilities\Filesystem as FilesystemContract;
-use Arcanedev\LogViewer\Contracts\Utilities\Factory as FactoryContract;
-use Arcanedev\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
-use Arcanedev\LogViewer\Contracts\LogViewer as LogViewerContract;
+use TobyYan\LogViewer\Contracts\Utilities\Filesystem as FilesystemContract;
+use TobyYan\LogViewer\Contracts\Utilities\Factory as FactoryContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
+use TobyYan\LogViewer\Contracts\LogViewer as LogViewerContract;
 
 /**
  * Class     LogViewer
  *
- * @package  Arcanedev\LogViewer
+ * @package  TobyYan\LogViewer
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogViewer implements LogViewerContract
 {
@@ -31,21 +32,21 @@ class LogViewer implements LogViewerContract
     /**
      * The factory instance.
      *
-     * @var \Arcanedev\LogViewer\Contracts\Utilities\Factory
+     * @var \TobyYan\LogViewer\Contracts\Utilities\Factory
      */
     protected $factory;
 
     /**
      * The filesystem instance.
      *
-     * @var \Arcanedev\LogViewer\Contracts\Utilities\Filesystem
+     * @var \TobyYan\LogViewer\Contracts\Utilities\Filesystem
      */
     protected $filesystem;
 
     /**
      * The log levels instance.
      *
-     * @var \Arcanedev\LogViewer\Contracts\Utilities\LogLevels
+     * @var \TobyYan\LogViewer\Contracts\Utilities\LogLevels
      */
     protected $levels;
 
@@ -57,9 +58,9 @@ class LogViewer implements LogViewerContract
     /**
      * Create a new instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\Factory     $factory
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\Filesystem  $filesystem
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\LogLevels   $levels
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\Factory     $factory
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\Filesystem  $filesystem
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\LogLevels   $levels
      */
     public function __construct(
         FactoryContract    $factory,
@@ -151,7 +152,7 @@ class LogViewer implements LogViewerContract
     /**
      * Get all logs.
      *
-     * @return \Arcanedev\LogViewer\Entities\LogCollection
+     * @return \TobyYan\LogViewer\Entities\LogCollection
      */
     public function all()
     {
@@ -175,7 +176,7 @@ class LogViewer implements LogViewerContract
      *
      * @param  string  $date
      *
-     * @return \Arcanedev\LogViewer\Entities\Log
+     * @return \TobyYan\LogViewer\Entities\Log
      */
     public function get($date)
     {
@@ -188,7 +189,7 @@ class LogViewer implements LogViewerContract
      * @param  string  $date
      * @param  string  $level
      *
-     * @return \Arcanedev\LogViewer\Entities\LogEntryCollection
+     * @return \TobyYan\LogViewer\Entities\LogEntryCollection
      */
     public function entries($date, $level = 'all')
     {
@@ -230,7 +231,7 @@ class LogViewer implements LogViewerContract
      *
      * @param  string|null  $locale
      *
-     * @return \Arcanedev\LogViewer\Tables\StatsTable
+     * @return \TobyYan\LogViewer\Tables\StatsTable
      */
     public function statsTable($locale = null)
     {

@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Tests\Tables;
+<?php namespace TobyYan\LogViewer\Tests\Tables;
 
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Tables\StatsTable;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Tables\StatsTable;
 
 /**
  * Class     StatsTableTest
  *
- * @package  Arcanedev\LogViewer\Tests\Tables
+ * @package  TobyYan\LogViewer\Tests\Tables
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class StatsTableTest extends TestCase
 {
@@ -113,20 +114,20 @@ class StatsTableTest extends TestCase
     /**
      * Get the LogViewer instance.
      *
-     * @return \Arcanedev\LogViewer\Contracts\LogViewer
+     * @return \TobyYan\LogViewer\Contracts\LogViewer
      */
     protected function getLogViewerInstance()
     {
-        return $this->app->make(\Arcanedev\LogViewer\Contracts\LogViewer::class);
+        return $this->app->make(\TobyYan\LogViewer\Contracts\LogViewer::class);
     }
 
     /**
      * Get the LogLevels instance.
      *
-     * @return \Arcanedev\LogViewer\Contracts\Utilities\LogLevels
+     * @return \TobyYan\LogViewer\Contracts\Utilities\LogLevels
      */
     protected function getLogLevelsInstance()
     {
-        return $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\LogLevels::class);
+        return $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\LogLevels::class);
     }
 }

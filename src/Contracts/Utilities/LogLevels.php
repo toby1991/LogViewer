@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Contracts\Utilities;
+<?php namespace TobyYan\LogViewer\Contracts\Utilities;
 
 use Illuminate\Translation\Translator;
 
 /**
  * Interface  LogLevels
  *
- * @package   Arcanedev\LogViewer\Contracts\Utilities
+ * @package   TobyYan\LogViewer\Contracts\Utilities
  * @author    ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 interface LogLevels
 {

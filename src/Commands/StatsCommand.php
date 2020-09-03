@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Commands;
+<?php namespace TobyYan\LogViewer\Commands;
 
-use Arcanedev\LogViewer\Tables\StatsTable;
+use TobyYan\LogViewer\Tables\StatsTable;
 
 /**
  * Class     StatsCommand
  *
- * @package  Arcanedev\LogViewer\Commands
+ * @package  TobyYan\LogViewer\Commands
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class StatsCommand extends Command
 {
@@ -66,7 +67,7 @@ class StatsCommand extends Command
     /**
      * Prepare footer.
      *
-     * @param  \Arcanedev\LogViewer\Tables\StatsTable  $stats
+     * @param  \TobyYan\LogViewer\Tables\StatsTable  $stats
      *
      * @return array
      */

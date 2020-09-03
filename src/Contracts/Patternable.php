@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Contracts;
+<?php namespace TobyYan\LogViewer\Contracts;
 
-use Arcanedev\LogViewer\Contracts\Utilities\Filesystem;
+use TobyYan\LogViewer\Contracts\Utilities\Filesystem;
 
 /**
  * Interface  Patternable
  *
- * @package   Arcanedev\LogViewer\Contracts
+ * @package   TobyYan\LogViewer\Contracts
  * @author    ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 interface Patternable
 {

@@ -1,15 +1,16 @@
-<?php namespace Arcanedev\LogViewer\Providers;
+<?php namespace TobyYan\LogViewer\Providers;
 
-use Arcanedev\LogViewer\Contracts;
-use Arcanedev\LogViewer\Utilities;
-use Arcanedev\Support\ServiceProvider;
+use TobyYan\LogViewer\Contracts;
+use TobyYan\LogViewer\Utilities;
+use TobyYan\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 
 /**
  * Class     UtilitiesServiceProvider
  *
- * @package  Arcanedev\LogViewer\Providers
+ * @package  TobyYan\LogViewer\Providers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class UtilitiesServiceProvider extends ServiceProvider
 {
@@ -100,7 +101,16 @@ class UtilitiesServiceProvider extends ServiceProvider
              */
             $config     = $app['config'];
             $files      = $app['files'];
-            $filesystem = new Utilities\Filesystem($files, $config->get('log-viewer.storage-path'));
+
+            switch ($config->get('app.log')){
+                case 'single':
+                    $filesystem = new Utilities\SingleLogFilesystem($files, $config->get('log-viewer.storage-path'));
+                    break;
+                case 'daily':
+                default:
+                    $filesystem = new Utilities\Filesystem($files, $config->get('log-viewer.storage-path'));
+                    break;
+            }
 
             $pattern = $config->get('log-viewer.pattern', []);
 

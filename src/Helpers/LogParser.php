@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Helpers;
+<?php namespace TobyYan\LogViewer\Helpers;
 
-use Arcanedev\LogViewer\Utilities\LogLevels;
+use TobyYan\LogViewer\Utilities\LogLevels;
 use Illuminate\Support\Str;
 
 /**
  * Class     LogParser
  *
- * @package  Arcanedev\LogViewer\Helpers
+ * @package  TobyYan\LogViewer\Helpers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogParser
 {

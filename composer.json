@@ -1,13 +1,19 @@
 {
-    "name":        "arcanedev/log-viewer",
+    "name":        "toby1991/log-viewer",
     "description": "Provides a Log Viewer for Laravel 5",
-    "keywords":    ["arcanedev", "arcanesoft", "laravel", "log", "log viewer", "log-viewer", "logviewer"],
-    "homepage":    "https://github.com/ARCANEDEV/LogViewer",
+    "keywords":    ["toby1991", "arcanedev", "arcanesoft", "laravel", "log", "log viewer", "log-viewer", "logviewer"],
+    "homepage":    "https://github.com/toby1991/LogViewer",
     "authors": [
         {
             "name":     "ARCANEDEV",
             "email":    "arcanedev.maroc@gmail.com",
             "homepage": "https://github.com/arcanedev-maroc",
+            "role":     "Developer"
+        },
+        {
+            "name":     "TobyYan",
+            "email":    "me@tobyan.com",
+            "homepage": "https://github.com/toby1991",
             "role":     "Developer"
         }
     ],
@@ -26,19 +32,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Arcanedev\\LogViewer\\": "src/"
+            "TobyYan\\LogViewer\\": "src/"
         },
         "files": ["constants.php", "helpers.php"]
     },
     "autoload-dev": {
         "psr-4": {
-            "Arcanedev\\LogViewer\\Tests\\": "tests/"
+            "TobyYan\\LogViewer\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Arcanedev\\LogViewer\\LogViewerServiceProvider"
+                "TobyYan\\LogViewer\\LogViewerServiceProvider"
             ]
         }
     }

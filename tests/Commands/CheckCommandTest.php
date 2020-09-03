@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Tests\Commands;
+<?php namespace TobyYan\LogViewer\Tests\Commands;
 
-use Arcanedev\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Tests\TestCase;
 
 /**
  * Class     CheckCommandTest
  *
- * @package  Arcanedev\LogViewer\Tests\Commands
+ * @package  TobyYan\LogViewer\Tests\Commands
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class CheckCommandTest extends TestCase
 {

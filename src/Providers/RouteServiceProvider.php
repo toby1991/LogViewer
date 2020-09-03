@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Providers;
+<?php namespace TobyYan\LogViewer\Providers;
 
-use Arcanedev\LogViewer\Http\Routes\LogViewerRoute;
-use Arcanedev\Support\Providers\RouteServiceProvider as ServiceProvider;
+use TobyYan\LogViewer\Http\Routes\LogViewerRoute;
+use TobyYan\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 /**
  * Class     RouteServiceProvider
  *
- * @package  Arcanedev\LogViewer\Providers
+ * @package  TobyYan\LogViewer\Providers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class RouteServiceProvider extends ServiceProvider
 {
@@ -24,7 +25,7 @@ class RouteServiceProvider extends ServiceProvider
     public function routeAttributes()
     {
         return array_merge($this->config('attributes', []), [
-            'namespace' => 'Arcanedev\\LogViewer\\Http\\Controllers',
+            'namespace' => 'TobyYan\\LogViewer\\Http\\Controllers',
         ]);
     }
 

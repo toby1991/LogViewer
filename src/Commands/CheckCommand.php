@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Commands;
+<?php namespace TobyYan\LogViewer\Commands;
 
-use Arcanedev\LogViewer\Contracts\Utilities\LogChecker as LogCheckerContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogChecker as LogCheckerContract;
 
 /**
  * Class     PublishCommand
  *
- * @package  Arcanedev\LogViewer\Commands
+ * @package  TobyYan\LogViewer\Commands
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class CheckCommand extends Command
 {
@@ -44,7 +45,7 @@ class CheckCommand extends Command
     /**
      * Get the Log Checker instance.
      *
-     * @return \Arcanedev\LogViewer\Contracts\Utilities\LogChecker
+     * @return \TobyYan\LogViewer\Contracts\Utilities\LogChecker
      */
     protected function getChecker()
     {

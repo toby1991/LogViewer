@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Tables;
+<?php namespace TobyYan\LogViewer\Tables;
 
-use Arcanedev\LogViewer\Contracts\Table as TableContract;
-use Arcanedev\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
+use TobyYan\LogViewer\Contracts\Table as TableContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
 
 /**
  * Class     AbstractTable
  *
- * @package  Arcanedev\LogViewer\Bases
+ * @package  TobyYan\LogViewer\Bases
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 abstract class AbstractTable implements TableContract
 {
@@ -25,7 +26,7 @@ abstract class AbstractTable implements TableContract
     /** @var array  */
     private $footer  = [];
 
-    /** @var \Arcanedev\LogViewer\Contracts\Utilities\LogLevels */
+    /** @var \TobyYan\LogViewer\Contracts\Utilities\LogLevels */
     protected $levels;
 
     /** @var string|null */
@@ -43,7 +44,7 @@ abstract class AbstractTable implements TableContract
      * Create a table instance.
      *
      * @param  array                                               $data
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\LogLevels  $levels
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\LogLevels  $levels
      * @param  string|null                                         $locale
      */
     public function __construct(array $data, LogLevelsContract $levels, $locale = null)
@@ -62,7 +63,7 @@ abstract class AbstractTable implements TableContract
     /**
      * Set LogLevels instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\LogLevels  $levels
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\LogLevels  $levels
      *
      * @return self
      */

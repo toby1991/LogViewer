@@ -1,12 +1,12 @@
-<?php namespace Arcanedev\LogViewer\Tests\Utilities;
+<?php namespace TobyYan\LogViewer\Tests\Utilities;
 
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Utilities\Factory;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Utilities\Factory;
 
 /**
  * Class     FactoryTest
  *
- * @package  Arcanedev\LogViewer\Tests\Utilities
+ * @package  TobyYan\LogViewer\Tests\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class FactoryTest extends TestCase
@@ -26,7 +26,7 @@ class FactoryTest extends TestCase
     {
         parent::setUp();
 
-        $this->logFactory = $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\Factory::class);
+        $this->logFactory = $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\Factory::class);
     }
 
     public function tearDown()
@@ -50,8 +50,8 @@ class FactoryTest extends TestCase
     public function it_can_get_filesystem_object()
     {
         $expectations = [
-            \Arcanedev\LogViewer\Contracts\Utilities\Filesystem::class,
-            \Arcanedev\LogViewer\Utilities\Filesystem::class,
+            \TobyYan\LogViewer\Contracts\Utilities\Filesystem::class,
+            \TobyYan\LogViewer\Utilities\Filesystem::class,
         ];
 
         foreach ($expectations as $expected) {
@@ -63,8 +63,8 @@ class FactoryTest extends TestCase
     public function it_can_get_levels_object()
     {
         $expectations = [
-            \Arcanedev\LogViewer\Contracts\Utilities\LogLevels::class,
-            \Arcanedev\LogViewer\Utilities\LogLevels::class,
+            \TobyYan\LogViewer\Contracts\Utilities\LogLevels::class,
+            \TobyYan\LogViewer\Utilities\LogLevels::class,
         ];
 
         foreach ($expectations as $expected) {
@@ -97,7 +97,7 @@ class FactoryTest extends TestCase
     {
         $logs = $this->logFactory->all();
 
-        $this->assertInstanceOf(\Arcanedev\LogViewer\Entities\LogCollection::class, $logs);
+        $this->assertInstanceOf(\TobyYan\LogViewer\Entities\LogCollection::class, $logs);
         $this->assertCount(2, $logs);
     }
 
@@ -232,7 +232,7 @@ class FactoryTest extends TestCase
     /**
      * @test
      *
-     * @expectedException \Arcanedev\LogViewer\Exceptions\LogNotFoundException
+     * @expectedException \TobyYan\LogViewer\Exceptions\LogNotFoundException
      */
     public function it_must_throw_a_filesystem_exception()
     {

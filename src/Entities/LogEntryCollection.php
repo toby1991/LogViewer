@@ -1,14 +1,15 @@
-<?php namespace Arcanedev\LogViewer\Entities;
+<?php namespace TobyYan\LogViewer\Entities;
 
-use Arcanedev\LogViewer\Helpers\LogParser;
-use Arcanedev\Support\Collection;
+use TobyYan\LogViewer\Helpers\LogParser;
+use TobyYan\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
  * Class     LogEntryCollection
  *
- * @package  Arcanedev\LogViewer\Entities
+ * @package  TobyYan\LogViewer\Entities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogEntryCollection extends Collection
 {

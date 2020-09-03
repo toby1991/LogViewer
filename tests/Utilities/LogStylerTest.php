@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Tests\Utilities;
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Utilities\LogStyler;
+<?php namespace TobyYan\LogViewer\Tests\Utilities;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Utilities\LogStyler;
 
 /**
  * Class     LogStylerTest
  *
- * @package  Arcanedev\LogViewer\Tests\Utilities
+ * @package  TobyYan\LogViewer\Tests\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogStylerTest extends TestCase
 {
@@ -25,7 +26,7 @@ class LogStylerTest extends TestCase
     {
         parent::setUp();
 
-        $this->styler = $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\LogStyler::class);
+        $this->styler = $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\LogStyler::class);
     }
 
     public function tearDown()

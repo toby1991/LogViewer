@@ -1,15 +1,16 @@
-<?php namespace Arcanedev\LogViewer\Entities;
+<?php namespace TobyYan\LogViewer\Entities;
 
-use Arcanedev\LogViewer\Contracts\Utilities\Filesystem as FilesystemContract;
-use Arcanedev\LogViewer\Exceptions\LogNotFoundException;
-use Arcanedev\Support\Collection;
+use TobyYan\LogViewer\Contracts\Utilities\Filesystem as FilesystemContract;
+use TobyYan\LogViewer\Exceptions\LogNotFoundException;
+use TobyYan\Support\Collection;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 /**
  * Class     LogCollection
  *
- * @package  Arcanedev\LogViewer\Entities
+ * @package  TobyYan\LogViewer\Entities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogCollection extends Collection
 {
@@ -18,7 +19,7 @@ class LogCollection extends Collection
      | -----------------------------------------------------------------
      */
 
-    /** @var \Arcanedev\LogViewer\Contracts\Utilities\Filesystem */
+    /** @var \TobyYan\LogViewer\Contracts\Utilities\Filesystem */
     private $filesystem;
 
     /* -----------------------------------------------------------------
@@ -48,9 +49,9 @@ class LogCollection extends Collection
     /**
      * Set the filesystem instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\Filesystem  $filesystem
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\Filesystem  $filesystem
      *
-     * @return \Arcanedev\LogViewer\Entities\LogCollection
+     * @return \TobyYan\LogViewer\Entities\LogCollection
      */
     public function setFilesystem(FilesystemContract $filesystem)
     {
@@ -67,7 +68,7 @@ class LogCollection extends Collection
     /**
      * Load all logs.
      *
-     * @return \Arcanedev\LogViewer\Entities\LogCollection
+     * @return \TobyYan\LogViewer\Entities\LogCollection
      */
     private function load()
     {
@@ -84,9 +85,9 @@ class LogCollection extends Collection
      * @param  string      $date
      * @param  mixed|null  $default
      *
-     * @return \Arcanedev\LogViewer\Entities\Log
+     * @return \TobyYan\LogViewer\Entities\Log
      *
-     * @throws \Arcanedev\LogViewer\Exceptions\LogNotFoundException
+     * @throws \TobyYan\LogViewer\Exceptions\LogNotFoundException
      */
     public function get($date, $default = null)
     {
@@ -124,7 +125,7 @@ class LogCollection extends Collection
      *
      * @param  string  $date
      *
-     * @return \Arcanedev\LogViewer\Entities\Log
+     * @return \TobyYan\LogViewer\Entities\Log
      */
     public function log($date)
     {
@@ -138,7 +139,7 @@ class LogCollection extends Collection
      * @param  string  $date
      * @param  string  $level
      *
-     * @return \Arcanedev\LogViewer\Entities\LogEntryCollection
+     * @return \TobyYan\LogViewer\Entities\LogEntryCollection
      */
     public function entries($date, $level = 'all')
     {
@@ -155,7 +156,7 @@ class LogCollection extends Collection
         $stats = [];
 
         foreach ($this->items as $date => $log) {
-            /** @var \Arcanedev\LogViewer\Entities\Log $log */
+            /** @var \TobyYan\LogViewer\Entities\Log $log */
             $stats[$date] = $log->stats();
         }
 
@@ -198,7 +199,7 @@ class LogCollection extends Collection
         $tree = [];
 
         foreach ($this->items as $date => $log) {
-            /** @var \Arcanedev\LogViewer\Entities\Log $log */
+            /** @var \TobyYan\LogViewer\Entities\Log $log */
             $tree[$date] = $log->tree($trans);
         }
 
@@ -217,7 +218,7 @@ class LogCollection extends Collection
         $menu = [];
 
         foreach ($this->items as $date => $log) {
-            /** @var \Arcanedev\LogViewer\Entities\Log $log */
+            /** @var \TobyYan\LogViewer\Entities\Log $log */
             $menu[$date] = $log->menu($trans);
         }
 

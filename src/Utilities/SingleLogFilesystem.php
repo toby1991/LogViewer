@@ -9,8 +9,9 @@ use Illuminate\Filesystem\Filesystem as IlluminateFilesystem;
  *
  * @package  TobyYan\LogViewer\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
-class Filesystem implements FilesystemContract
+class SingleLogFilesystem implements FilesystemContract
 {
     /* -----------------------------------------------------------------
      |  Properties
@@ -32,18 +33,18 @@ class Filesystem implements FilesystemContract
     protected $storagePath;
 
     /**
+     * The log files date pattern.
+     *
+     * @var string
+     */
+    protected $datePattern = '';
+
+    /**
      * The log files prefix pattern.
      *
      * @var string
      */
     protected $prefixPattern;
-
-    /**
-     * The log files date pattern.
-     *
-     * @var string
-     */
-    protected $datePattern;
 
     /**
      * The log files extension.
@@ -106,7 +107,7 @@ class Filesystem implements FilesystemContract
      */
     public function getPattern()
     {
-        return $this->prefixPattern.$this->datePattern.$this->extension;
+        return $this->prefixPattern.$this->extension;
     }
 
     /**
@@ -119,8 +120,8 @@ class Filesystem implements FilesystemContract
      * @return self
      */
     public function setPattern(
-        $prefix    = self::PATTERN_PREFIX,
-        $date      = self::PATTERN_DATE,
+        $prefix    = self::PATTERN_PREFIX_SINGLE,
+        $date      = '',
         $extension = self::PATTERN_EXTENSION
     ) {
         $this->setPrefixPattern($prefix);
@@ -139,8 +140,7 @@ class Filesystem implements FilesystemContract
      */
     public function setDatePattern($datePattern)
     {
-        $this->datePattern = $datePattern;
-
+        $this->datePattern = '';
         return $this;
     }
 
@@ -305,7 +305,7 @@ class Filesystem implements FilesystemContract
      */
     private function getLogPath($date)
     {
-        $path = $this->storagePath.DS.$this->prefixPattern.$date.$this->extension;
+        $path = $this->storagePath.DS.$this->prefixPattern.$this->extension;
 
         if ( ! $this->filesystem->exists($path)) {
             throw new FilesystemException("The log(s) could not be located at : $path");
@@ -324,7 +324,7 @@ class Filesystem implements FilesystemContract
     private function extractDates(array $files)
     {
         return array_map(function ($file) {
-            return extract_date(basename($file));
+            return $this->getPattern();
         }, $files);
     }
 }

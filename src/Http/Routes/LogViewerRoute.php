@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Http\Routes;
+<?php namespace TobyYan\LogViewer\Http\Routes;
 
-use Arcanedev\Support\Routing\RouteRegistrar;
+use TobyYan\Support\Routing\RouteRegistrar;
 
 /**
  * Class     LogViewerRoute
  *
- * @package  Arcanedev\LogViewer\Http\Routes
+ * @package  TobyYan\LogViewer\Http\Routes
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  *
  * @codeCoverageIgnore
  */

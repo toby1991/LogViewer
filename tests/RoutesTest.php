@@ -1,10 +1,11 @@
-<?php namespace Arcanedev\LogViewer\Tests;
+<?php namespace TobyYan\LogViewer\Tests;
 
 /**
  * Class     RoutesTest
  *
- * @package  Arcanedev\LogViewer\Tests
+ * @package  TobyYan\LogViewer\Tests
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  *
  * @todo:    Find a way to test the route Classes with testbench (Find another tool if it's impossible).
  */
@@ -160,7 +161,7 @@ class RoutesTest extends TestCase
             $response->assertExactJson(['message' => 'Server Error']);
         }
         catch(\Exception $exception) {
-            $this->assertInstanceOf(\Arcanedev\LogViewer\Exceptions\FilesystemException::class, $exception);
+            $this->assertInstanceOf(\TobyYan\LogViewer\Exceptions\FilesystemException::class, $exception);
             $this->assertStringStartsWith('The log(s) could not be located at : ', $exception->getMessage());
         }
     }

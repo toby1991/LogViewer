@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Providers;
+<?php namespace TobyYan\LogViewer\Providers;
 
-use Arcanedev\LogViewer\Commands;
-use Arcanedev\Support\Providers\CommandServiceProvider as ServiceProvider;
+use TobyYan\LogViewer\Commands;
+use TobyYan\Support\Providers\CommandServiceProvider as ServiceProvider;
 
 /**
  * Class     CommandsServiceProvider
  *
- * @package  Arcanedev\LogViewer\Providers
+ * @package  TobyYan\LogViewer\Providers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class CommandsServiceProvider extends ServiceProvider
 {

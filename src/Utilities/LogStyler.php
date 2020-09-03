@@ -1,12 +1,12 @@
-<?php namespace Arcanedev\LogViewer\Utilities;
+<?php namespace TobyYan\LogViewer\Utilities;
 
-use Arcanedev\LogViewer\Contracts\Utilities\LogStyler as LogStylerContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogStyler as LogStylerContract;
 use Illuminate\Contracts\Config\Repository as ConfigContract;
 
 /**
  * Class     LogStyler
  *
- * @package  Arcanedev\LogViewer\Utilities
+ * @package  TobyYan\LogViewer\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogStyler implements LogStylerContract

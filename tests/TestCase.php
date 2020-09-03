@@ -1,9 +1,9 @@
-<?php namespace Arcanedev\LogViewer\Tests;
+<?php namespace TobyYan\LogViewer\Tests;
 
-use Arcanedev\LogViewer\Contracts\Table as TableContract;
-use Arcanedev\LogViewer\Entities\Log;
-use Arcanedev\LogViewer\Entities\LogEntry;
-use Arcanedev\LogViewer\Entities\LogEntryCollection;
+use TobyYan\LogViewer\Contracts\Table as TableContract;
+use TobyYan\LogViewer\Entities\Log;
+use TobyYan\LogViewer\Entities\LogEntry;
+use TobyYan\LogViewer\Entities\LogEntryCollection;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 use Orchestra\Testbench\TestCase as BaseTestCase;
@@ -13,8 +13,9 @@ use ReflectionClass;
 /**
  * Class     TestCase
  *
- * @package  Arcanedev\LogViewer\Tests
+ * @package  TobyYan\LogViewer\Tests
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 abstract class TestCase extends BaseTestCase
 {
@@ -63,7 +64,7 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Arcanedev\LogViewer\LogViewerServiceProvider::class,
+            \TobyYan\LogViewer\LogViewerServiceProvider::class,
         ];
     }
 
@@ -104,7 +105,7 @@ abstract class TestCase extends BaseTestCase
     /**
      * Assert Log object.
      *
-     * @param  \Arcanedev\LogViewer\Entities\Log  $log
+     * @param  \TobyYan\LogViewer\Entities\Log  $log
      * @param  string                             $date
      */
     protected function assertLog(Log $log, $date)
@@ -117,7 +118,7 @@ abstract class TestCase extends BaseTestCase
      * Assert Log entries object.
      *
      * @param  string                                            $date
-     * @param  \Arcanedev\LogViewer\Entities\LogEntryCollection  $entries
+     * @param  \TobyYan\LogViewer\Entities\LogEntryCollection  $entries
      */
     protected function assertLogEntries($date, LogEntryCollection $entries)
     {
@@ -130,7 +131,7 @@ abstract class TestCase extends BaseTestCase
      * Assert log entry object.
      *
      * @param  string                                  $date
-     * @param  \Arcanedev\LogViewer\Entities\LogEntry  $entry
+     * @param  \TobyYan\LogViewer\Entities\LogEntry  $entry
      */
     protected function assertLogEntry($date, LogEntry $entry)
     {
@@ -247,7 +248,7 @@ abstract class TestCase extends BaseTestCase
     /**
      * Assert table instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Table  $table
+     * @param  \TobyYan\LogViewer\Contracts\Table  $table
      */
     protected function assertTable(TableContract $table)
     {
@@ -259,7 +260,7 @@ abstract class TestCase extends BaseTestCase
     /**
      * Assert table header.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Table  $table
+     * @param  \TobyYan\LogViewer\Contracts\Table  $table
      */
     protected function assertTableHeader(TableContract $table)
     {
@@ -272,7 +273,7 @@ abstract class TestCase extends BaseTestCase
     /**
      * Assert table rows.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Table  $table
+     * @param  \TobyYan\LogViewer\Contracts\Table  $table
      */
     protected function assertTableRows(TableContract $table)
     {
@@ -301,7 +302,7 @@ abstract class TestCase extends BaseTestCase
     /**
      * Assert table footer.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Table  $table
+     * @param  \TobyYan\LogViewer\Contracts\Table  $table
      */
     protected function assertTableFooter(TableContract $table)
     {
@@ -340,11 +341,11 @@ abstract class TestCase extends BaseTestCase
     /**
      * Get Filesystem Utility instance.
      *
-     * @return \Arcanedev\LogViewer\Utilities\Filesystem
+     * @return \TobyYan\LogViewer\Utilities\Filesystem
      */
     protected function filesystem()
     {
-        return $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\Filesystem::class);
+        return $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\Filesystem::class);
     }
 
     /**
@@ -406,7 +407,7 @@ abstract class TestCase extends BaseTestCase
      *
      * @param  string  $date
      *
-     * @return \Arcanedev\LogViewer\Entities\Log
+     * @return \TobyYan\LogViewer\Entities\Log
      */
     protected function getLog($date)
     {

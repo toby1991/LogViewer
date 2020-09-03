@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Contracts\Utilities;
+<?php namespace TobyYan\LogViewer\Contracts\Utilities;
 
-use Arcanedev\LogViewer\Contracts\Patternable;
+use TobyYan\LogViewer\Contracts\Patternable;
 
 /**
  * Interface  Filesystem
  *
- * @package   Arcanedev\LogViewer\Contracts\Utilities
+ * @package   TobyYan\LogViewer\Contracts\Utilities
  * @author    ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 interface Filesystem extends Patternable
 {
@@ -15,6 +16,7 @@ interface Filesystem extends Patternable
      | -----------------------------------------------------------------
      */
 
+    const PATTERN_PREFIX_SINGLE = 'laravel';
     const PATTERN_PREFIX    = 'laravel-';
     const PATTERN_DATE      = '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]';
     const PATTERN_EXTENSION = '.log';
@@ -102,7 +104,7 @@ interface Filesystem extends Patternable
      *
      * @return string
      *
-     * @throws \Arcanedev\LogViewer\Exceptions\FilesystemException
+     * @throws \TobyYan\LogViewer\Exceptions\FilesystemException
      */
     public function read($date);
 
@@ -113,7 +115,7 @@ interface Filesystem extends Patternable
      *
      * @return bool
      *
-     * @throws \Arcanedev\LogViewer\Exceptions\FilesystemException
+     * @throws \TobyYan\LogViewer\Exceptions\FilesystemException
      */
     public function delete($date);
 

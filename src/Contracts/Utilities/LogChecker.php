@@ -1,12 +1,13 @@
-<?php namespace Arcanedev\LogViewer\Contracts\Utilities;
+<?php namespace TobyYan\LogViewer\Contracts\Utilities;
 
 use Illuminate\Contracts\Config\Repository as ConfigContract;
 
 /**
  * Interface  LogChecker
  *
- * @package   Arcanedev\LogViewer\Contracts\Utilities
+ * @package   TobyYan\LogViewer\Contracts\Utilities
  * @author    ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 interface LogChecker
 {
@@ -41,7 +42,7 @@ interface LogChecker
     /**
      * Set the Filesystem instance.
      *
-     * @param  \Arcanedev\LogViewer\Contracts\Utilities\Filesystem  $filesystem
+     * @param  \TobyYan\LogViewer\Contracts\Utilities\Filesystem  $filesystem
      *
      * @return self
      */

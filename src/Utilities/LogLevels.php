@@ -1,6 +1,6 @@
-<?php namespace Arcanedev\LogViewer\Utilities;
+<?php namespace TobyYan\LogViewer\Utilities;
 
-use Arcanedev\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogLevels as LogLevelsContract;
 use Illuminate\Translation\Translator;
 use Psr\Log\LogLevel;
 use ReflectionClass;
@@ -8,7 +8,7 @@ use ReflectionClass;
 /**
  * Class     LogLevels
  *
- * @package  Arcanedev\LogViewer\Utilities
+ * @package  TobyYan\LogViewer\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogLevels implements LogLevelsContract

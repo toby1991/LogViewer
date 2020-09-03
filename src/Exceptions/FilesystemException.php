@@ -1,9 +1,9 @@
-<?php namespace Arcanedev\LogViewer\Exceptions;
+<?php namespace TobyYan\LogViewer\Exceptions;
 
 /**
  * Class     FilesystemException
  *
- * @package  Arcanedev\LogViewer\Exceptions
+ * @package  TobyYan\LogViewer\Exceptions
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class FilesystemException extends LogViewerException {}

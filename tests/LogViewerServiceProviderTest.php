@@ -1,11 +1,11 @@
-<?php namespace Arcanedev\LogViewer\Tests;
+<?php namespace TobyYan\LogViewer\Tests;
 
-use Arcanedev\LogViewer\LogViewerServiceProvider;
+use TobyYan\LogViewer\LogViewerServiceProvider;
 
 /**
  * Class     LogViewerServiceProviderTest
  *
- * @package  Arcanedev\LogViewer\Tests
+ * @package  TobyYan\LogViewer\Tests
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogViewerServiceProviderTest extends TestCase
@@ -25,7 +25,7 @@ class LogViewerServiceProviderTest extends TestCase
     {
         parent::setUp();
 
-        $this->provider = $this->app->getProvider(\Arcanedev\LogViewer\LogViewerServiceProvider::class);
+        $this->provider = $this->app->getProvider(\TobyYan\LogViewer\LogViewerServiceProvider::class);
     }
 
     public function tearDown()
@@ -44,9 +44,9 @@ class LogViewerServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \Arcanedev\Support\ServiceProvider::class,
-            \Arcanedev\Support\PackageServiceProvider::class,
-            \Arcanedev\LogViewer\LogViewerServiceProvider::class,
+            \TobyYan\Support\ServiceProvider::class,
+            \TobyYan\Support\PackageServiceProvider::class,
+            \TobyYan\LogViewer\LogViewerServiceProvider::class,
         ];
 
         foreach ($expectations as $expected) {
@@ -58,7 +58,7 @@ class LogViewerServiceProviderTest extends TestCase
     public function it_can_provides()
     {
         $expected = [
-            \Arcanedev\LogViewer\Contracts\LogViewer::class,
+            \TobyYan\LogViewer\Contracts\LogViewer::class,
         ];
 
         $this->assertEquals($expected, $this->provider->provides());

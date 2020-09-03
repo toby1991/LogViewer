@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Commands;
+<?php namespace TobyYan\LogViewer\Commands;
 
-use Arcanedev\LogViewer\LogViewerServiceProvider;
+use TobyYan\LogViewer\LogViewerServiceProvider;
 use Symfony\Component\Console\Input\InputOption;
 
 /**
  * Class     PublishCommand
  *
- * @package  Arcanedev\LogViewer\Commands
+ * @package  TobyYan\LogViewer\Commands
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class PublishCommand extends Command
 {

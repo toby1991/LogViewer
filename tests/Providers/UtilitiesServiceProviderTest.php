@@ -1,14 +1,15 @@
-<?php namespace Arcanedev\LogViewer\Tests\Providers;
+<?php namespace TobyYan\LogViewer\Tests\Providers;
 
-use Arcanedev\LogViewer\Providers\UtilitiesServiceProvider;
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Contracts;
+use TobyYan\LogViewer\Providers\UtilitiesServiceProvider;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Contracts;
 
 /**
  * Class     UtilitiesServiceProviderTest
  *
- * @package  Arcanedev\LogViewer\Tests\Providers
+ * @package  TobyYan\LogViewer\Tests\Providers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class UtilitiesServiceProviderTest extends TestCase
 {
@@ -47,7 +48,7 @@ class UtilitiesServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \Arcanedev\Support\ServiceProvider::class,
+            \TobyYan\Support\ServiceProvider::class,
             UtilitiesServiceProvider::class,
         ];
 

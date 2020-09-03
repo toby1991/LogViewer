@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Facades;
+<?php namespace TobyYan\LogViewer\Facades;
 
-use Arcanedev\LogViewer\Contracts\Utilities\LogMenu as LogMenuContract;
+use TobyYan\LogViewer\Contracts\Utilities\LogMenu as LogMenuContract;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class     LogMenu
  *
- * @package  Arcanedev\LogViewer\Facades
+ * @package  TobyYan\LogViewer\Facades
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class LogMenu extends Facade
 {

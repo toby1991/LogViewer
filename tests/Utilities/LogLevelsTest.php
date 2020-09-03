@@ -1,12 +1,12 @@
-<?php namespace Arcanedev\LogViewer\Tests\Utilities;
+<?php namespace TobyYan\LogViewer\Tests\Utilities;
 
-use Arcanedev\LogViewer\Utilities\LogLevels;
-use Arcanedev\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Utilities\LogLevels;
+use TobyYan\LogViewer\Tests\TestCase;
 
 /**
  * Class     LogLevelsTest
  *
- * @package  Arcanedev\LogViewer\Tests\Utilities
+ * @package  TobyYan\LogViewer\Tests\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogLevelsTest extends TestCase
@@ -15,7 +15,7 @@ class LogLevelsTest extends TestCase
      |  Properties
      | ------------------------------------------------------------------------------------------------
      */
-    /** @var \Arcanedev\LogViewer\Utilities\LogLevels  */
+    /** @var \TobyYan\LogViewer\Utilities\LogLevels  */
     private $levels;
 
     /* ------------------------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ class LogLevelsTest extends TestCase
     {
         parent::setUp();
 
-        $this->levels = $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\LogLevels::class);
+        $this->levels = $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\LogLevels::class);
     }
 
     public function tearDown()

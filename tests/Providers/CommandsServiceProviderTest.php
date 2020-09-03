@@ -1,13 +1,14 @@
-<?php namespace Arcanedev\LogViewer\Tests\Providers;
+<?php namespace TobyYan\LogViewer\Tests\Providers;
 
-use Arcanedev\LogViewer\Providers\CommandsServiceProvider;
-use Arcanedev\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Providers\CommandsServiceProvider;
+use TobyYan\LogViewer\Tests\TestCase;
 
 /**
  * Class     CommandsServiceProviderTest
  *
- * @package  Arcanedev\LogViewer\Tests\Providers
+ * @package  TobyYan\LogViewer\Tests\Providers
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
+ * @author   TobyYan <me@tobyan.com>
  */
 class CommandsServiceProviderTest extends TestCase
 {
@@ -45,7 +46,7 @@ class CommandsServiceProviderTest extends TestCase
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
-            \Arcanedev\Support\ServiceProvider::class,
+            \TobyYan\Support\ServiceProvider::class,
             CommandsServiceProvider::class
         ];
 
@@ -58,9 +59,9 @@ class CommandsServiceProviderTest extends TestCase
     public function it_can_provides()
     {
         $expected = [
-            \Arcanedev\LogViewer\Commands\PublishCommand::class,
-            \Arcanedev\LogViewer\Commands\StatsCommand::class,
-            \Arcanedev\LogViewer\Commands\CheckCommand::class,
+            \TobyYan\LogViewer\Commands\PublishCommand::class,
+            \TobyYan\LogViewer\Commands\StatsCommand::class,
+            \TobyYan\LogViewer\Commands\CheckCommand::class,
         ];
 
         $this->assertEquals($expected, $this->provider->provides());

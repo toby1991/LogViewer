@@ -1,12 +1,12 @@
-<?php namespace Arcanedev\LogViewer\Tests\Utilities;
+<?php namespace TobyYan\LogViewer\Tests\Utilities;
 
-use Arcanedev\LogViewer\Tests\TestCase;
-use Arcanedev\LogViewer\Utilities\LogChecker;
+use TobyYan\LogViewer\Tests\TestCase;
+use TobyYan\LogViewer\Utilities\LogChecker;
 
 /**
  * Class     LogCheckerTest
  *
- * @package  Arcanedev\LogViewer\Tests\Utilities
+ * @package  TobyYan\LogViewer\Tests\Utilities
  * @author   ARCANEDEV <arcanedev.maroc@gmail.com>
  */
 class LogCheckerTest extends TestCase
@@ -26,7 +26,7 @@ class LogCheckerTest extends TestCase
     {
         parent::setUp();
 
-        $this->checker = $this->app->make(\Arcanedev\LogViewer\Contracts\Utilities\LogChecker::class);
+        $this->checker = $this->app->make(\TobyYan\LogViewer\Contracts\Utilities\LogChecker::class);
     }
 
     public function tearDown()
